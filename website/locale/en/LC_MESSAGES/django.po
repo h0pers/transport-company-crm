@@ -1,0 +1,215 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-08-01 14:48+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: apps/core/models.py:9
+msgid "Created"
+msgstr ""
+
+#: apps/core/models.py:10
+msgid "Updated"
+msgstr ""
+
+#: apps/core/models.py:21
+msgid "Title"
+msgstr ""
+
+#: apps/core/models.py:22
+msgid "Description"
+msgstr ""
+
+#: apps/core/models.py:32
+msgid "Name"
+msgstr ""
+
+#: apps/core/models.py:52
+msgid "Record with this name already exists"
+msgstr ""
+
+#: apps/crm_system/admin.py:35
+msgid "Company ready"
+msgstr ""
+
+#: apps/crm_system/admin.py:39
+msgid "Yes"
+msgstr ""
+
+#: apps/crm_system/admin.py:52 apps/crm_system/admin.py:99
+msgid "Last contact status"
+msgstr ""
+
+#: apps/crm_system/admin.py:68
+msgid "Type company name"
+msgstr ""
+
+#: apps/crm_system/apps.py:8
+msgid "CRM Management System"
+msgstr ""
+
+#: apps/crm_system/models.py:24 apps/crm_system/models.py:25
+#: apps/crm_system/models.py:115
+msgid "Canton"
+msgstr ""
+
+#: apps/crm_system/models.py:30 apps/crm_system/models.py:103
+msgid "Legal seat"
+msgstr ""
+
+#: apps/crm_system/models.py:31
+msgid "Legal seats"
+msgstr ""
+
+#: apps/crm_system/models.py:36 apps/crm_system/models.py:109
+msgid "Legal form"
+msgstr ""
+
+#: apps/crm_system/models.py:37
+msgid "Legal forms"
+msgstr ""
+
+#: apps/crm_system/models.py:89
+msgid "Company type"
+msgstr ""
+
+#: apps/crm_system/models.py:90
+msgid "Company types"
+msgstr ""
+
+#: apps/crm_system/models.py:94
+msgid "Liquidation"
+msgstr ""
+
+#: apps/crm_system/models.py:95
+msgid "Type"
+msgstr ""
+
+#: apps/crm_system/models.py:96
+msgid "Website"
+msgstr ""
+
+#: apps/crm_system/models.py:97
+msgid "Phone number"
+msgstr ""
+
+#: apps/crm_system/models.py:98
+msgid "Email"
+msgstr ""
+
+#: apps/crm_system/models.py:121 apps/crm_system/models.py:142
+msgid "Company"
+msgstr ""
+
+#: apps/crm_system/models.py:122
+msgid "Companies"
+msgstr ""
+
+#: apps/crm_system/models.py:131
+msgid "Note"
+msgstr ""
+
+#: apps/crm_system/models.py:136 apps/crm_system/models.py:169
+#: apps/custom_user/forms.py:9
+msgid "User"
+msgstr ""
+
+#: apps/crm_system/models.py:146
+msgid "Company note"
+msgstr ""
+
+#: apps/crm_system/models.py:147
+msgid "Company notes"
+msgstr ""
+
+#: apps/crm_system/models.py:154
+#, python-format
+msgid "%(user)s has left comment"
+msgstr ""
+
+#: apps/crm_system/models.py:161
+msgid "Decline"
+msgstr ""
+
+#: apps/crm_system/models.py:162
+msgid "Agreed"
+msgstr ""
+
+#: apps/crm_system/models.py:163
+msgid "Repeat"
+msgstr ""
+
+#: apps/crm_system/models.py:181
+msgid "Company contact record"
+msgstr ""
+
+#: apps/crm_system/models.py:182
+msgid "Company contact records"
+msgstr ""
+
+#: apps/crm_system/models.py:185
+#, python-format
+msgid "%(user)s contacted at %(contacted_at)s"
+msgstr ""
+
+#: apps/custom_user/admin.py:19
+msgid "Personal info"
+msgstr ""
+
+#: apps/custom_user/admin.py:21
+msgid "Permissions"
+msgstr ""
+
+#: apps/custom_user/admin.py:29
+msgid "Important dates"
+msgstr ""
+
+#: apps/custom_user/apps.py:8
+msgid "Authentication"
+msgstr ""
+
+#: apps/custom_user/models.py:10
+msgid "Manager"
+msgstr ""
+
+#: apps/custom_user/models.py:11
+msgid "Operator"
+msgstr ""
+
+#: apps/custom_user/models.py:14
+msgid "staff status"
+msgstr ""
+
+#: apps/custom_user/models.py:15
+msgid "Designates whether the user can log into this admin site."
+msgstr ""
+
+#: templates/admin/login.html:11 templates/admin/login.html:52
+msgid "Log in"
+msgstr ""
+
+#: templates/admin/login.html:16
+msgid "Please correct the error below."
+msgstr ""
+
+#: templates/admin/login.html:16
+msgid "Please correct the errors below."
+msgstr ""
+
+#: templates/admin/login.html:45
+msgid "Forgotten your password or username?"
+msgstr ""

@@ -1,0 +1,11 @@
+{% extends 'admin/submit_line.html' %}
+{% load i18n %}
+
+{% block submit-row %}
+  {{ block.super }}
+  {% if show_google_search %}
+    <div class="grp-float-left">
+      <a class="grp-button" target="_blank" rel="noopener noreferrer" href='https://www.google.com/search?q={{ original.title }}'>Google Search</a>
+    </div>
+  {% endif %}
+{% endblock %}
