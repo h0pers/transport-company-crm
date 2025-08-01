@@ -2,6 +2,7 @@
 # vim:sw=4:ts=4:et
 
 su-exec "$USER" python manage.py collectstatic --noinput
+su-exec "$USER" python manage.py compilemessages
 
 # Creating the first user in the system
 USER_EXISTS="from django.contrib.auth import get_user_model; User = get_user_model(); exit(User.objects.exists())"
