@@ -4,7 +4,8 @@ from django.db.models import TextChoices
 from django.utils.translation import gettext_lazy as _
 
 from apps.core.admin import AdminModelPermissionMixin
-from .models import *
+
+from .models import Canton, Company, CompanyContactRecord, CompanyNote, CompanyType, LegalForm, LegalSeat
 
 # Register your models here.
 
@@ -79,7 +80,7 @@ class CompanyAdmin(AdminModelPermissionMixin, admin.ModelAdmin):
     list_display = [
         'title',
         'description',
-        'in_liquidation',
+        'display_liquidation',
         'display_last_contact_status',
         'website',
         'phone',
@@ -102,7 +103,7 @@ class CompanyAdmin(AdminModelPermissionMixin, admin.ModelAdmin):
 
     def save_formset(self, request, form, formset, change):
         instances = formset.save(commit=False)
-        if issubclass(formset.model, (CompanyContactRecord, CompanyNote)):
+        if issubclass(formset.model, CompanyContactRecord|CompanyNote):
             for instance in instances:
                 if not instance.pk:
                     instance.user = request.user

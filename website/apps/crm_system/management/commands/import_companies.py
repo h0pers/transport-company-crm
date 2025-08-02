@@ -2,7 +2,14 @@ import pandas as pd
 from django.core.management import BaseCommand, CommandError
 from django.db import transaction
 
-from apps.crm_system.models import Company, LegalSeat, LegalForm, Canton, CompanyContactRecord, CompanyType
+from apps.crm_system.models import (
+    Canton,
+    Company,
+    CompanyContactRecord,
+    CompanyType,
+    LegalForm,
+    LegalSeat,
+)
 
 
 class Command(BaseCommand):
@@ -58,8 +65,8 @@ class Command(BaseCommand):
         Company.objects.all().delete()
         try:
             df = pd.read_excel(file_path, sheet_name=None)
-        except FileNotFoundError:
-            raise CommandError('File not found')
+        except FileNotFoundError as e:
+            raise CommandError('File not found') from e
 
         if not len(df):
             raise CommandError('Provided file is empty')
@@ -68,7 +75,7 @@ class Command(BaseCommand):
             self.stdout.write(self.style.SUCCESS('Reading file...'))
             for sheet in df.keys():
                 df[sheet].fillna('', inplace=True)
-                for idx, row in df[sheet].iterrows():
+                for _, row in df[sheet].iterrows():
                     title = row[options['title']]
                     description = row.get(options['description'], '')
                     in_liquidation = bool(row.get(options['liquidation'], False))

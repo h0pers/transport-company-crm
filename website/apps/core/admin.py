@@ -1,11 +1,11 @@
+from collections.abc import Sequence
 from functools import partialmethod
-from typing import Optional, Sequence
 
 
 class AdminModelPermissionMixin:
     permissions: dict[str, Sequence[str] | str] = {}
 
-    def get_user_status_permissions(self, request) -> Optional[Sequence[str] | str]:
+    def get_user_status_permissions(self, request) -> Sequence[str] | str | None:
         return self.permissions.get(getattr(request.user, 'status', None), [])
 
     @classmethod

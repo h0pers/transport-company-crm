@@ -1,6 +1,6 @@
 from django.utils import timezone
 
-from apps.crm_system.models import CompanyContactRecord, Company
+from apps.crm_system.models import Company, CompanyContactRecord
 
 
 class CompanyContactService:
