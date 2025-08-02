@@ -1,10 +1,10 @@
 from django.conf import settings
 from django.db import models
-from django.db.models import Subquery, Case, When, Value, Q, BooleanField, Count, OuterRef
+from django.db.models import BooleanField, Case, Count, OuterRef, Q, Subquery, Value, When
 from django.db.models.manager import BaseManager
 from django.utils.translation import gettext_lazy as _
 
-from apps.core.models import TimestampModel, DescriptiveModel, UniqueNamedModel
+from apps.core.models import DescriptiveModel, TimestampModel, UniqueNamedModel
 
 __all__ = [
     'Canton',

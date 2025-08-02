@@ -4,9 +4,9 @@ from django.contrib.auth.models import Group
 from django.utils.translation import gettext_lazy as _
 
 from apps.core.admin import AdminModelPermissionMixin
+
 from .forms import CustomUserCreationForm
 from .models import CustomUser
-
 
 # Register your models here.
 
