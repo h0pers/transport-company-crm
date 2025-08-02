@@ -97,6 +97,10 @@ class CompanyAdmin(AdminModelPermissionMixin, admin.ModelAdmin):
         User.Status.OPERATOR: ['change', 'view', 'module'],
     }
 
+    @admin.display(description=_('Liquidation'), ordering='in_liquidation', boolean=True)
+    def display_liquidation(self, obj):
+        return not obj.in_liquidation
+
     @admin.display(description=_('Last contact status'))
     def display_last_contact_status(self, obj):
         return obj.contact_records.latest('contacted_at').get_status_display()
